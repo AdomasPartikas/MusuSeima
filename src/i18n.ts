@@ -21,7 +21,7 @@ void i18n
             escapeValue: false,
         },
         detection: {
-            order: ['querystring', 'localStorage', 'navigator'],
+            order: ['querystring', 'localStorage'],
             caches: ['localStorage'],
         },
     })
