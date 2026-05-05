@@ -1,0 +1,152 @@
+[
+  {
+    "id": "mem-001",
+    "name": "Visa seima",
+    "year": 2024,
+    "description": {
+      "lt": "Vasaros susiburiamas prie ezero — degime, banios ir gerai nuoteikos.",
+      "en": "A summer gathering at the lake — a bonfire, swims, and great spirits."
+    },
+    "imagePath": "/images/memories/mem-001.jpg",
+    "imageAlt": {
+      "lt": "Seima sypso prie ezero saulei leidiantis",
+      "en": "Family smiling by the lake at sunset"
+    },
+    "tags": ["vasara", "gamta"]
+  },
+  {
+    "id": "mem-002",
+    "name": "Senele Aldona",
+    "year": 2019,
+    "description": {
+      "lt": "Sekmadienio pietys su visu puodu kugelio ir seneles sypsnys.",
+      "en": "Sunday lunch with a full pot of kugelis and grandma's warmest smile."
+    },
+    "imagePath": "/images/memories/mem-002.jpg",
+    "imageAlt": {
+      "lt": "Senele virtuveje su tradiciniu patiekalu",
+      "en": "Grandma in the kitchen with a traditional dish"
+    },
+    "tags": ["tradicija", "maistas"]
+  },
+  {
+    "id": "mem-003",
+    "name": "Vaiku Kaledu rytas",
+    "year": 2022,
+    "description": {
+      "lt": "Anksti ryta vaikai zbega laiptais zr dovaneles. Akys degancio.",
+      "en": "Kids rushing downstairs at dawn to find their gifts. Eyes like lanterns."
+    },
+    "imagePath": "/images/memories/mem-003.jpg",
+    "imageAlt": {
+      "lt": "Vaikai salia Kaledu eglutes",
+      "en": "Children around the Christmas tree"
+    },
+    "tags": ["Kaledoms", "vaikai"]
+  },
+  {
+    "id": "mem-004",
+    "name": "Tevelio gimtadienis",
+    "year": 2023,
+    "description": {
+      "lt": "Sielow kekso pjaustymas sode — visos tris kartos po vienu stogu.",
+      "en": "Cutting the birthday cake in the garden — three generations under one roof."
+    },
+    "imagePath": "/images/memories/mem-004.jpg",
+    "imageAlt": {
+      "lt": "Seimos narius supanti torta lauke",
+      "en": "Family members around a cake outdoors"
+    },
+    "tags": ["gimtadienis", "sode"]
+  },
+  {
+    "id": "mem-005",
+    "name": "Baltiijos jura",
+    "year": 2021,
+    "description": {
+      "lt": "Papluste Palangoje — kregzdeles leido ant bangu ir kojomis liete jura.",
+      "en": "A dip in Palanga — skimming waves and getting toes wet in the Baltic."
+    },
+    "imagePath": "/images/memories/mem-005.jpg",
+    "imageAlt": {
+      "lt": "Seima Baltijos pajuryje",
+      "en": "Family at the Baltic seashore"
+    },
+    "tags": ["jura", "kelione"]
+  },
+  {
+    "id": "mem-006",
+    "name": "Pirmoji diena mokykloje",
+    "year": 2020,
+    "description": {
+      "lt": "Gele, kuprine, didziule sypena — pirmojo diena visuomet.",
+      "en": "A flower, a backpack, a huge smile — the first day always will be."
+    },
+    "imagePath": "/images/memories/mem-006.jpg",
+    "imageAlt": {
+      "lt": "Vaikas su gelyte pirmaja mokyklos diena",
+      "en": "Child with a flower on the first school day"
+    },
+    "tags": ["mokykla", "vaikai"]
+  },
+  {
+    "id": "mem-007",
+    "name": "Senelio sodas",
+    "year": 2018,
+    "description": {
+      "lt": "Obelys dar zydejo kai mes rinkome brazkeles. Senelis mokytojas, mes — mokiniai.",
+      "en": "Apple trees still bloomed while we picked strawberries. Grandpa — the teacher, us — pupils."
+    },
+    "imagePath": "/images/memories/mem-007.jpg",
+    "imageAlt": {
+      "lt": "Vaikai ir senelis sode",
+      "en": "Children and grandfather in the garden"
+    },
+    "tags": ["sodas", "tradicija"]
+  },
+  {
+    "id": "mem-008",
+    "name": "Uzgavenes",
+    "year": 2023,
+    "description": {
+      "lt": "Blynai su spirguciais, Morevidimas — visa seima laukia pavasario.",
+      "en": "Pancakes with cracklings, Morė burning — the whole family awaiting spring."
+    },
+    "imagePath": "/images/memories/mem-008.jpg",
+    "imageAlt": {
+      "lt": "Seima Uzgaveriu tradicijose",
+      "en": "Family celebrating Shrove Tuesday traditions"
+    },
+    "tags": ["tradicija", "uzgavenes"]
+  },
+  {
+    "id": "mem-009",
+    "name": "Kelione i Vilniu",
+    "year": 2022,
+    "description": {
+      "lt": "Senamiestis, Gedimino pilis, mese gale ir ledo kreamai — viena geriausiu dienu.",
+      "en": "Old town, Gediminas' Tower, a walk and ice creams at the end — one of the best days."
+    },
+    "imagePath": "/images/memories/mem-009.jpg",
+    "imageAlt": {
+      "lt": "Seima Vilniaus senamiestyje",
+      "en": "Family in Vilnius old town"
+    },
+    "tags": ["kelione", "miestas"]
+  },
+  {
+    "id": "mem-010",
+    "name": "Naujieji metai",
+    "year": 2024,
+    "description": {
+      "lt": "Paskutines sekundes, fejerwerkai ir noras, kad daugiau tokiu naktu.",
+      "en": "Last seconds, fireworks, and a wish for more nights just like this one."
+    },
+    "imagePath": "/images/memories/mem-010.jpg",
+    "imageAlt": {
+      "lt": "Seima stebint Naujuju metu fejerverkus",
+      "en": "Family watching New Year fireworks"
+    },
+    "tags": ["naujieji", "naktis"]
+  }
+]

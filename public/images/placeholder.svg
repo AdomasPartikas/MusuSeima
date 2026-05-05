@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#f5ede5"/>
+  <rect x="160" y="100" width="80" height="80" rx="8" fill="#e8d5c4"/>
+  <path d="M185 155 l10-20 10 15 7-10 13 20z" fill="#c4a88a" opacity="0.7"/>
+  <circle cx="185" cy="135" r="8" fill="#c4a88a" opacity="0.6"/>
+  <text x="200" y="225" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="#9a7b63">Musu Seima</text>
+</svg>
