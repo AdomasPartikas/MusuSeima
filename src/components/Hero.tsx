@@ -1,21 +1,51 @@
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { siteConfig } from '../config/site'
+import memories from '../data/memories.json'
 
 export default function Hero() {
     const { t } = useTranslation()
+    const heroSlides = useMemo(() => memories.slice(0, 5).map((entry) => entry.imagePath), [])
+    const [failedSlides, setFailedSlides] = useState<Record<string, true>>({})
+    const availableSlides = heroSlides.filter((slide) => !failedSlides[slide])
+    const [activeSlide, setActiveSlide] = useState(0)
+
+    useEffect(() => {
+        if (availableSlides.length <= 1) {
+            setActiveSlide(0)
+            return
+        }
+
+        const timer = window.setInterval(() => {
+            setActiveSlide((prev) => (prev + 1) % availableSlides.length)
+        }, 5000)
+
+        return () => window.clearInterval(timer)
+    }, [availableSlides.length])
+
+    function markSlideAsFailed(src: string) {
+        setFailedSlides((prev) => ({ ...prev, [src]: true }))
+    }
 
     return (
         <section className="hero" aria-labelledby="hero-title">
-            <div className="hero-inner">
-                <div className="hero-icon" aria-hidden="true">
-                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80" aria-hidden="true">
-                        <circle cx="32" cy="32" r="32" fill="var(--accent-soft)" />
-                        <path d="M20 44c0-7 5.4-12 12-12s12 5 12 12" stroke="var(--accent)" strokeWidth="2.5" strokeLinecap="round" />
-                        <circle cx="32" cy="25" r="7" stroke="var(--accent)" strokeWidth="2.5" />
-                        <path d="M14 26c0-5 3.8-9 8.5-9" stroke="var(--accent-muted)" strokeWidth="2" strokeLinecap="round" />
-                        <path d="M50 26c0-5-3.8-9-8.5-9" stroke="var(--accent-muted)" strokeWidth="2" strokeLinecap="round" />
-                    </svg>
+            {availableSlides.length > 0 ? (
+                <div className="hero-slideshow" aria-hidden="true">
+                    {availableSlides.map((slide, index) => (
+                        <img
+                            key={slide}
+                            src={slide}
+                            alt=""
+                            className={`hero-slide${index === activeSlide ? ' is-active' : ''}`}
+                            loading={index === 0 ? 'eager' : 'lazy'}
+                            decoding="async"
+                            onError={() => markSlideAsFailed(slide)}
+                        />
+                    ))}
+                    <div className="hero-overlay" />
                 </div>
+            ) : null}
+            <div className="hero-inner">
                 <h1 id="hero-title" className="hero-title">
                     {t('heroTitle')}
                 </h1>
